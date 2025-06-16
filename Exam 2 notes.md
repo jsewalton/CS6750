@@ -2,105 +2,113 @@
 
 
 
-**3.5 Prototyping**
+**2.6 Mental Models and Representations**
 
-**[GOAL #1] Students will understand the role of prototyping in the design life cycle.**
-
-
-
-*   Like brainstorming design alternatives, **prototyping** involves looking at the different ideas available to us and developing them a bit.
-    *   The major distinction, though, is that in prototyping, we want to actually build things we can put in front of users.
-    *   But that doesn’t mean building the entire interface before we ever have a user look at it --- We want to get user feedback as quickly and rapidly as possible, and build up more sophisticated prototypes as we go through the design life cycle.
-*   **Timing**
-    *   **Early prototyping**: very rapid revision on preliminary ideas. This happens on our first few iterations through the design life cycle.
-    *   **Late prototyping**: finishing touches on a final design, or revising a design that’s already live. This happens after we’ve already been through several iterations of our design life cycle.
-
-**[GOAL #2] Students will understand the spectrum from low- to high-fidelity prototypes and which are appropriate at the right times.**
+**[GOAL #1] Students will understand the nature of mental models in feedback cycles.**
 
 
 
-*   **Representations**
-    *   Text
-    *   Paper
-    *   Wireframe
-    *   Physical
-    *   Live
-    *   ![screenshot](/images_Exam2/image6.png)
-   
-*   **Fidelity**: refers to the completeness or maturity of the prototype.
-    *   **Low fidelity**: something like paper or simple drawings, very easy to change
-    *   **High fidelity**: wireframe or a working interface, something harder to put together
-    *   We want to use easily changeable low-fidelity prototypes to explore our ideas before moving on to high-fidelity prototypes.
-    *   **Trade-offs**
-        *   Prototyping is largely about the trade-offs we have to make. Our goal is to maximize these trade-offs.
-        *   We want to start with the easier low-fidelity prototypes to get initial ideas, to evaluate big designs and big plans, and to make sure we’re on the right track.
-        *   Then as we go along, we can move toward the higher-fidelity prototypes that take more time to assemble because we have some initial evidence that our designs are sound.
-        *   It’s really important here to also stress that our prototypes are prototypes. They aren’t complete interfaces.
-        *   Don’t become a runaway train of designing: design deliberately and get feedback often
-    *   ![screenshot](/images_Exam2/image21.png)
+*   **Mental model**: An internal, simulatable understanding of external reality
+    *   It’s the understanding you hold in your head about the world around you and how it works. It’s an understanding of the processes, relationships, and connections in real systems.
+    *   Simulating a mental model allows you to make expectations and predictions and figure out how to achieve your goals in the world by matching the outcome to our mental model.
+    *   When reality doesn’t match the mental model, it makes us uncomfortable. When it happens over and over, it can frustrate us. It can make us feel that we just don’t and will never understand.
+    *   As interface designers, this presents us with a lot of challenges.
+        *   We want to make sure that the user’s mental model of our systems matches the way our systems actually work.
+        *   A good interface will give the user a good mental model of the system it presents
+        *   We can do this in two primary ways: by designing systems that act the way people already expect them to act, and by designing systems that by their design teach people how they will act.
+        *   That way, we can minimize the discomfort that comes from systems acting in ways that users don’t expect.
+        *   When you’re designing an interface, you’re playing very much the role of an educator. Your goal is to teach your user how the system works through the design of the interface.
+        *   Most users don’t watch tutorials or read documentation. You have to design interfaces that teach users while they’re using them (make them learnable). That’s where representations will come in. Good representations show the user exactly how the system actually works. It’s an enormous challenge, but also incredibly satisfying when done well.
+*   **Five tips, or principles, to leverage for creating learnable interfaces**:
+    *   These principles of learnability were proposed by Dix, Finlay, Abowd, and Beale in their book Human-Computer Interaction.
+    *   **1. Predictability**. Looking at an action, can the user predict what will happen? For example, graying out a button is a good way to help the user predict that clicking that button will do nothing.
+    *   **2. Synthesizability**. Not only should the user be able to predict the effects of an action before they perform it, they should also be able to see the sequence of actions that led to the current state. This can be difficult in graphical user interfaces, but the log of actions through the undo menu can make it easier. Command lines make this easier, actually, as they give a log of the commands in order.
+    *   **3. Familiarity**. This is similar to Norman’s principles of affordances. The interface should leverage actions with which the user is already familiar from real-world experience. For example, if you’re trying to indicate something is either good or bad, you’d likely want to use red and green rather than blue and yellow.
+    *   **4. Generalizability**. Similar to familiarity and to Norman’s principle of consistency, knowledge of one user interface should be generalize to others. If your interface has tasks that are similar to other interfaces’ tasks, like saving, copying, and pasting, it should perform those tasks in the same way.
+    *   **5. Consistency**. Slightly different than Norman’s principle of consistency, this means that similar tasks or operations within a single interface should behave similarly. For example, you wouldn’t want to have Ctrl+X cut text if text is selected, but close the application if no text is selected. Its behavior should be consistent.
+    *   Using these principles can help the user leverage their existing mental models of other designs, as well as develop a mental model of your interface as quickly as possible.
 
-  
-
-*   **Evaluation**
-    *   These different kinds of prototypes also lend themselves to different kinds of evaluation structures.
-    *   **LF**: fine for evaluating the relative function of an interface, whether or not it can do what it’s designed to do. 
-    *   **HF**: can be useful in evaluating the readability of the interface. To evaluate actual performance, like how long certain tasks take or what designs lead to more purchases, we generally need a high-fidelity prototype later in the cycle
-    *   ![screenshot](/images_Exam2/image4.png)
-
-    
-
-*   **Scope**
-    *   **Vertical prototypes**: take a small portion of the interaction and prototype it in great detail.
-    *   **Horizontal prototypes**: cover the design as a whole, but in a more shallow way.
-    *   Usually start with the horizontal prototype earlier on and move toward the deeper vertical prototype later, but in reality you’ll likely move back and forth between these approaches throughout the timeline.
-    *   ![screenshot](/images_Exam2/image14.png)
-
-    
-**[GOAL #3] Students will understand the basic methods of performing prototyping.**
+**[GOAL #2] Students will understand the relationship between representations and strong mental models.**
 
 
 
-*   **Tips for effective prototyping**
-    *   1. **Keep prototypes easy to change**. Your goal here is to enable rapid revision and improvement. It’s easy to make quick changes to something on paper, but it’s harder to make it to code or physical prototypes.
-    *   2. **Make it clear that it’s a prototype**. If you make a prototype look too good, users may focus on the superficial elements like colors or font. By letting your prototype look like a prototype, you can help them focus on what you’re ready to test.
-    *   3. **Be creative**. Your goal is to get feedback. Do whatever it takes to get feedback. Don’t let the type of prototype you’re designing constrain the kind of feedback you can get: if you find your current prototypes don’t give the right kind of feedback, find ones that do!
-    *   4. **Evaluate risks**. One of the biggest goals of prototyping is to minimize the time spent pursuing bad designs by getting feedback early. Ask yourself consistently: how much would I lose if I found users hate the parts of my design they haven’t seen yet? Whenever that answer gets larger than a couple hours, try to get feedback to make sure you’re not wasting time.
-    *   5. **Prototype for Feedback**. The goal of a prototype is to get feedback. You could spend a lot of time focusing on things like font selection and color choice, but that’s probably not the feedback you need when you’re exploring your big alternatives. Prototype for the kind of feedback you want to get.
-*   **Verbal prototypes**
-    *   Very simplest of prototypes; lowest-fidelity; literally just describing the design we have in mind.
-    *   it’s extremely easy to do, although it can be hard to do effectively.
-    *   _Social desirability bias_ is big here because it’s difficult to describe our idea in a way that allows the participant to feel comfortable agreeing with us. So, we need to make sure to ask for specific and critical feedback.
-    *   At the same time, though, how do we really know the user understands the design we’re describing? We’re working toward becoming experts in these areas, and we don’t want to fall victim to _expert blindspot_ by assuming our explanation makes sense to a novice. _Analogies_ can be powerful tools for explaining prototypes: describe your interface in terms of other tools the user might know about.
-*   **Paper prototypes**
-    *   One step above just ‘describing our ideas’ to our user in a verbal prototype would be drawing them out. This is what we call a paper prototype (could do this for anything from designing an on-screen interface to designing the placement of controls in a vehicle to designing a physical interaction device)
-    *   Paper prototyping isn’t only useful for testing out big interface design. You can also do some interaction with it (also called _card-based prototyping_ -- the idea is each screen would be on a card that I can quickly sub in and out)
-    *   Allows us to prototype a decent amount of my interface’s interaction with relatively low prototyping effort
-*   **Wizard of Oz prototypes**
-    *   Paper prototyping is great when we’re designing flat interfaces for screens, but WoO is great if you were designing a voice interface or a gesture interface
-    *   The idea here is that we, “behind the curtain”, do the things that the interface would do once it’s implemented ⇒ that way, we can test out the interactions that we plan to design and see how well they’ll work.
-    *   In practice, Wizard of Oz prototypes can actually get very complex. You could have entire programs that work by having a person supply the requested input at the right time.
-    *   As a concept, though, a Wizard of Oz prototype is a prototype where the user can interact with the system somewhat authentically, while a human supplies the functionality that hasn’t yet been implemented.
-*   **Wireframing prototypes**
-    *   In wireframing, we use some more detailed tools to mock up what an interface might look like. This lets us experiment with some additional details like font size, colors, and the challenges of screen real estate.
-    *   There are lots of tools out there for wireframing that come equipped with built-in common widgets and layouts, but you can also do some rudimentary wireframing in something as simple as PowerPoint or Google Drawings.
-*   **Physical prototypes**
-    *   Wireframing is great for prototyping on-screen interfaces, but physical prototypes are if you’re working on something more physical and three-dimensional
-    *   It doesn’t have to actually work; that’s where a lot of designers get tripped up: they think to get good feedback on a design, they have to have a working version, but you don’t. There are lots of elements you can test without actually implementing anything
-*   **Prototyping pros and cons**
-    *   ![screenshot](/images_Exam2/image8.png)
+*   **Representations**: Internal symbols for an external reality
+    *   In order to develop good mental models, we need to give users good representations of the system with which they’re interacting.
+    *   That way, we can help users learn how to use our interfaces as quickly as possible.
+*   The most powerful tool in our arsenal to help ensure users have effective mental models of our system is representation.
+    *   We get to choose how things are visualized to users, and so we get to choose some of how their mental model develops.
+    *   Using good representations can make all the difference between effective and ineffective mental models.
+
+**[GOAL #3] Students will understand the criteria for a good representation for forming mental models.**
 
 
-*   **Design lifecycle**
-    *   We did some initial needfinding, brainstormed some alternatives, and prototyped those alternatives on paper.
-    *   Now, we evaluate those prototypes with real people.
-    *   The results of that evaluation tell us if we need to go back and understand the task better.
-    *   That evaluation tells us the new questions we need to ask about the users’ tasks.
-    *   Those results help us reflect on our alternatives as a whole.
-    *   Then, equipped with that initial evaluation, the additional needfinding, and the additional brainstorming, we return here and prototype again.
-    *   If our prototype was pretty successful, we might increase the fidelity, increase the detail, and evaluate again.
-    *   If it wasn’t, we might stay low-fidelity with a different design altogether.
-    *   Each time we develop a new prototype, we’re going through this cycle again
-    *   ![screenshot](/images_Exam2/image15.png)
+
+*   Audio is a poor representation of complex problems. Visual representation is better for complex problems
+*   **Characteristics of good representations**
+    *   First, good representations **make relationships explicit**.
+    *   Second, good representations **bring objects and relationships together**.
+        *   We’re visualizing the objects, but in a way that exposes the relationships among them.
+    *   Third, a good representation **excludes extraneous details**.
+    *   Fourth, good representations **expose natural constraints**.
+*   **Representations in interfaces**
+    *   Representations are all around us in the real world, but they play a huge role in interfaces as well. Designing representations of the system state is actually one of the most common tasks you might perform as an interface designer.
+    *   Representations, when used correctly, can make many tasks trivial or even invisible, and we as interface designers have a lot of control over representations in our designs.
+    *   Example: scrollbar is a representation of your relative position in a document
+*   **Analogies and metaphors**
+    *   Analogies make the interface more learnable, but they also risk restricting the interface to outdated requirements or constraints
+    *   Analogies and metaphors have a downside, thought: when you choose to use them, users don’t know where the analogy ends.
+    *   While analogies are powerful ways to help users understand our interfaces, we also have to pay attention to what misconceptions they might introduce.
+    *   While we need to leverage analogies and prior experiences whenever possible, we also need to be aware that eventually, if we’re doing something interesting or new, analogies are going to break down. Eventually, we’re going to have to teach the user to use the unique elements of our interface.
+*   **Design principles revisited**
+    *   First, the idea that **people reason by analogy** to past interfaces or metaphor to the real world is one of the reasons the principle of consistency is so important. We want to be consistent with the analogies and metaphors that people use to make sense of our interfaces.
+    *   Second, when we say that an interface should teach the user how the system works, we’re echoing the idea of **affordances**. The way the system looks should echo how it’s used. Just by observing the system, the user should be actively learning how to interact with it.
+    *   Third, representations are important because they **map the interface to the task at hand**. A good representation is one that users can use to predict the outcomes of certain actions. In other words, a good representation lets users predict the mapping between their actions in the interface and outcomes in the world.
+
+**[GOAL #4] Students will understand the relationship between learning curves and representations.**
+
+
+
+*   **Learning curve**: plots expertise against experience
+    *   Every interface requires the user to do some learning to understand how to use it. Very often, we visualize these as learning curves.
+    *   Generally, as the user gains more experience, they also gain more expertise.
+    *   The shape and steepness of this curve can vary.
+*   Ideally, we want a learning curve that grows quickly in expertise with little experience (“**rapid**” or “**steep**” learning curve).
+*   **Slow learning curve**
+    *   Interfaces that are more difficult to use would have slower learning curves.
+    *   The user needs a lot more experience to reach the same level of expertise.
+*   **How do we reach proficiency faster?**
+    *   For one, if we’re consistent with existing conventions and use analogies that users understand, we can actually start them off with some initial expertise. 
+    *   From there, we want to make the ascension as rapid as possible. One way we can do that is by using representations and affordances that help the user immediately understand how to use the interface.
+    *   So, good design is about making a user achieve expertise as quickly as possible, either through starting them off higher or lifting them up quicker.
+
+**[GOAL #5] Students will understand the concepts of learned helplessness, expert blindspot, slips, and mistakes.**
+
+
+
+*   As we design interfaces, we will no doubt encounter instances where the user makes mistakes. Sometimes this might be because our users are stressed, busy, or distracted, and other times it might be because our users don’t understand our interfaces or even their own goals.
+*   As designers, though, we know that there’s no such thing as user error: any user error is a failure of the interface to properly guide the user to the right action.
+    *   User error: slips and mistakes
+*   **Slips**: when the user has the right mental model, but does the wrong thing anyway.
+    *   Could be a violation of the consistency principle
+    *   Norman further divides slips into two categories:
+        *   **Action-based slips** are places where the user performs the wrong action, or performs the right action on the wrong object, even though they knew the correct action. They might click the wrong button or right click when they should left click.
+        *   **Memory lapse slips** are places where the user forgets something they knew to do. Forgetting to start a timer or initiate logging might be examples of memory lapse slips.
+*   **Mistakes**: when the user has the wrong mental model, and does the wrong thing as a result
+    *   Could be a violation of the tolerance principle
+    *   Norman divides mistakes into three categories:
+        *   The first is **rule-based**, where the user correctly assesses the state of the world but makes the wrong decision based on it.
+        *   The second is **knowledge-based**, where the user incorrectly assesses the state of the world in the first place.
+        *   The third is **memory lapse**, similar to slips, but this is about failing to fully execute a plan because of distractions or other memory lapses.
+*   We want to help prevent routine errors by leveraging consistent practices. We want to let our interface offload some of the demands on working memory from the user to avoid memory lapse errors. And we want to leverage good representations to help users develop the right mental models to minimize rule-based and knowledge-based errors. And while errors are inevitable, we should make sure to leverage the tolerance principle to make sure their repercussions can never be too bad.
+*   **Learned helplessness**: when the user working with the interface learns that they’re helpless to actually use the system.
+    *   When there is no discernible interaction between the input and the output
+    *   When the user acts in the system over and over and over again, but never receives input that helps them? Never even receives input that makes them think they’re making progress
+*   **Expert blindspot**
+    *   Generally, when we’re developing interfaces, we’re going to be experts in the domain. It’s rare that you design an interface to help people do something you don’t know how to do yourself. But as a result, there’s risk for expert blind spot.
+    *   When you’re an expert in something, there are parts of the task that you do subconsciously, without even thinking about them. And yet if we were suddenly asked to train someone else, there are lots of things we’d forget to say, or lots of things we would think would be obvious. 
+    *   And that’s exactly what you’re doing when you’re designing an interface. You’re teaching the user how to use what you designed. You’re teaching them without the benefit of actually talking to them, explaining things to them, or demonstrating things for them. You’re teaching them through the design of your interface.
+    *   So you have to make sure that you don’t assume they’re an expert, too. You have to overcome that expert blind spot **because we are not our users**.
+
 
 ---
 
