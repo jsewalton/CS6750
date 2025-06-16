@@ -325,6 +325,275 @@
         *   _[plan/compare]_
 
 
+---
+
+
+**2.3 Direct Manipulation and Invisible Interfaces**
+
+**[GOAL #1] Students will understand the power of direct manipulation in designing interfaces.**
+
+
+
+*   **Direct manipulation**: the user should interact directly with their task
+    *   The principle that the user should feel as much as possible like they’re directly controlling the object of their task
+    *   New technologies are making it more and more possible to feel like we’re directly manipulating something even when there’s an interface in the way (e.g. touch screens where you can drag icons and pinch the screen to zoom)
+*   Our goal is to narrow the gulf of execution and gulf of evaluation as much as possible.
+    *   Arguably, the ultimate form of this is something called direct manipulation.
+    *   We can shorten the gulfs of execution and evaluation in a number of ways without direct manipulation, but direct manipulation is a powerful method for shortening that distance.
+    *   _Example_: moving files with the command line vs moving them with your mouse -- there’s a narrower gulf of execution because the interface is leveraging real-world expectation and experience
+    *   _Example_: moving files with a mouse is great, but there is a gulf of execution and evaluation for novice users => modern touch screens make direct manipulation more direct than ever
+*   This gives us a nice general heuristic to keep in mind: **how do we help the user interact most closely with the target of their task**? How do we make it so they’re manipulating it as directly as possible?
+*   The feeling of directness is inversely proportional to the amount of cognitive effort it takes to manipulate and evaluate a system
+*   ![screenshot](/images_Exam1/image4.png)
+
+    
+    *   In other words, the more cognitive load required to use the system, the less direct the interaction feels.
+    *   The authors break distance into two components: semantic distance and articulatory distance.
+        *   **Semantic distance** refers to the difference between the user’s goals and their expression in the system. In other words, it’s how hard it is to know what to do.
+        *   **Articulatory distance** is the distance between that expression and its execution. In other words, it’s how hard it is to actually do what you know to do.
+    *   The user starts with some goals, translates them into their form of expression in the interface, and executes that expression. The system then returns some output in some form of expression, which is translated by the user into their understanding of the new state of the system. => This cycle is happening constantly when you’re interacting with any interface. But distance is only one component. It’s possible to have interfaces with little distance that are nonetheless not examples of direct manipulation. => This is true for feedback cycles in general, not just direct manipulation.
+        *   What sets direct manipulation apart is the second component: direct engagement: the systems that best exemplify direct manipulation all give the qualitative feeling that one is directly engaged with control of the objects--not with the programs, not with the computer, but with the semantic objects of our goals and intentions.
+*   **Virtual reality (VR)**
+    *   Virtual reality right now is making some incredible strides in facilitating direct manipulation in places where it hasn’t been possible before.
+    *   Traditionally, when designers are designing stuff in 3D, they’re forced to use 2D interfaces. That translation from 2D to 3D really gets in the way of directly manipulating whatever is being designed.
+    *   Through virtual reality, though, designers are able to view what they’re designing in 3D, as if it’s in the room there with them.
+    *   Gesture interfaces like those used in virtual reality struggle with some feedback issues.
+    *   We aim to make the user feel like they’re physically manipulating the artifact, but when you’re working with something physically, it pushes back against your hands.
+    *   Direct manipulation is a big challenge for virtual reality as well. Virtual reality thrives on making you feel like you’re somewhere else visually and auditorily, but it has a long way to go kinesthetically.
+    *   How do you create the feeling of direct manipulation based on physical action when you can only give feedback visually and auditorily?
+
+**[GOAL #2] Students will understand the idea of an invisible interface between a user and a task.**
+
+
+
+*   **Invisible Interface**: an interface that disappears between the user and their task
+    *   At their best, the interface actually disappears, which is what we mean by an invisible interface.
+    *   With an invisible interface, the user spends no time having to think about the interface they’re using: all their time is dedicated to thinking about the task that they’re performing. Even though there is an interface in the middle, the user spends no time thinking about it. Instead, they feel as if they are interacting directly with the task.
+    *   Whether through using direct manipulation, through innovative approaches to shrinking these gulfs, or through the user’s patience and learning, our ultimate goal is for the interface between the user and the task to become invisible.
+*   **Tips for designing invisible interfaces**
+    *   1. **Use affordances**. We talk more about affordances when we discuss design principles. Affordances are places where the visual design of the interface suggests how it is to be used. Buttons are for pressing, dials are for turning, switches are for flicking. Use these expectations to make your interface more usable.
+    *   2. **Know your user**. Invisibility means different things to different people. Invisibility to a novice means that all the interactions are natural, but invisibility to an expert means maximizing efficiency. Know for whom you’re trying to design.
+    *   3. **Differentiate your user**. Maybe you’re designing for both novices and experts. If that’s the case, provide multiple ways of accomplishing tasks. For example, having copy and paste under the ‘Edit’ menu keeps those options discoverable, but providing Ctrl+C and Ctrl+V as shortcuts keeps those actions efficient.
+    *   4. **Let your interface teach**. When we think of teaching users how to use our software, we usually think of tutorials or manuals, but ideally the interface itself will do the teaching. For example, when users select copy and paste from the edit menu, they see the hotkey that corresponds to that function. The goal is to teach them the more efficient way of performing those actions without requiring them to already know it in order to work.
+    *   5. **Talk to your user**. We’ll say this over and over again, but the best thing you can do is talk to the user. Ask them what they’re thinking while they use an interface. Note especially whether they talk about the task or the interface: if they’re talking about the interface, then it’s pretty visible.
+
+**[GOAL #3] Students will understand that invisibility may come via learning or via design, but via design is the goal.**
+
+
+
+*   Interfaces become invisible not just through great design, but also through users learning to use them => with enough practice and experience, many users will become sufficiently comfortable with many interfaces to feel invisibly integrated into the task.
+    *   Just because the interface has become invisible doesn’t mean it’s a great interface.
+*   Our goal is to create interfaces that are invisible from the moment the user starts using them. They should feel immediately as if they’re interacting with the task underlying the interface.
+*   Direct manipulation isn’t just about designing interactions that feel like you’re directly manipulating the interface. It’s also about designing interfaces that lend themselves to interactions that feel direct.
+
+
+
+---
+
+
+**2.4 Human Abilities**
+
+**[GOAL #1] Students will understand the three main human abilities: perception, cognition, and action.**
+
+
+
+*   Information processing model: involves three major systems: perception, cognition, and response.
+*   Input = perception
+    *   **Input**: how stimuli are sensed from the world and perceived in the mind.
+*   Processing = cognition
+    *   **Processing**: cognition, how the brain stores and reasons over the input it’s received.
+*   Output = action
+    *   **Output**: how the brain then controls the individual’s actions in the world.
+
+**[GOAL #2] Students will understand the strengths and weaknesses of the different types of perception in designing interfaces.**
+
+
+
+*   **Sight**
+    *   **Peripheral vision**
+        *   We can assume that the most important details should be placed in the center of the user’s view; peripheral vision is good for detecting motion, but it isn’t as good for detecting color or detail.
+        *   We might use periphery for some alerts, we shouldn’t require the user to focus closely on anything out there.
+    *   **Color-blindedness**
+        *   We want to avoid relying on color to understand an interface. We can use it to emphasize knowledge that is already present in the system, but using the system shouldn’t rely on perceiving color
+    *   Sight is directional.
+        *   If the user is looking the wrong way or has his/her eyes closed, he’ll/she’ll miss visual feedback.
+        *   Visual acuity decreases with age: if we’re designing something with older audiences in mind, we want to be careful of things like font size. Ideally, these would be adjustable to meet the needs of multiple audiences.
+    *   The majority of concepts we discuss in HCI are likely connected to visual perception.
+*   **Hearing**
+    *   Unlike vision, hearing isn’t directional.
+    *   Audio might be useful for designing alerts, but can be overwhelming for users or share too much with people around her.
+*   **Sensation / haptic**
+    *   Unlike listening, touch feedback is generally only available to the person it’s touching, so it can be used to create more personal feedback.
+    *   Traditionally, touch feedback or haptic feedback has been very natural. But with touchscreens, motion controls, and virtual reality, touch needs to more and more be designed explicitly into the system if we’re to use it.
+
+**[GOAL #3] Students will understand the limitations of human cognition and memory and its relevance to designing interfaces that strain working memory.**
+
+
+
+*   For our purposes, we have three different kinds of memory: the perceptual store, the short-term memory, and the long-term memory
+*   **Perceptual store**: very short-term memory, lasting less than a second.
+    *   One of the most common models of this working memory came from Alan Baddeley and Graham Hitch in 1974.
+    *   They described it as having three parts:
+        *   **Visuospatial sketchpad**: holds visual information for active manipulation (example: picture a pencil. The visuospatial sketchpad is where you’re seeing that pencil.)
+        *   **Articulatory loop or phonological store**: similar to the visuospatial sketchpad, but for verbal or auditory information. It stores the sounds or speech you’ve heard recently.
+        *   **Episodic buffer**: added to the model in 2000, refers to taking care of integrating information from the other systems, as well as chronological ordering to put things in place.
+        *   **Central executive**: the final component, responsible for coordinating these various systems.
+    *   When the user has domain expertise, he/she is able to better process images about that domain more quickly: **expertise or rehearsal delays the decay of the perceptual buffer**
+*   **Short-term memory**: 
+    *   It’s important we avoid requiring the user to keep too much stored in short-term memory.
+    *   The current state of the art says that people can only hold 4 to 5 chunks in short-term memory at one time.
+    *   It’s far easier to recognize something you know than to recall it independently; that will be a useful takeaway for us as we design interfaces: **we can minimize the memory load on the user by relying more on their ability to recognize things than recall them**.
+    *   Implications of short-term memory for HCI:
+        *   We do not want to ask the user to hold too much in working memory at a time: 4 to 5 chunks is all.
+        *   We can increase the user’s effective short-term memory capacity by helping them chunk things
+        *   When possible, we should leverage recognition over recall: the user doesn’t have to remember specifics, they just need to recognize it when they see it.
+*   **Long-term memory**: a seemingly unlimited store of memories
+    *   It’s harder to put something into long-term memory than to put it into short-term memory. In fact, to load something into long-term memory, you generally need to put it into short-term memory several times.
+    *   **Leitner System**: way of memorizing key-value pairs, or in other words, a way of memorizing flashcards
+*   **Learning**
+    *   When we design interfaces, we are in some ways hoping the user has to learn as little as possible to find the interface useful.
+    *   However, our interfaces should also teach the user over time how to use them most efficiently.
+    *   **Procedural learning**: how to _do_ something
+    *   **Declarative learning**: knowledge _about_ something
+    *   **While declarative knowledge is how we generally communicate with one another, procedural knowledge is generally what we do in HCI**
+        *   When you have strong procedural knowledge, you may forget how you’re doing what you’re doing because it’s so second-nature.
+        *   You’re unconsciously competent with what you’re doing.
+        *   When you’re in that state, it can be difficult to explain to someone who lacks that competence because you aren’t sure what makes you good at it.
+        *   It’s difficult to translate your subconscious procedural knowledge into explicit declarative knowledge, but declarative knowledge is how we communicate, especially communicating with novice users.
+*   **Cognitive load**
+    *   Cognitive load has two major applications to our work in designing interfaces:
+        *   One, we want to reduce the cognitive load posed by the interface so the user can dedicate more of their resources to the task itself.
+        *   Second, we want to understand for our context what other tasks are competing for cognitive resources.
+    *   **Tips for reducing cognitive load**
+        *   1. **Use multiple modalities**. Most often, that’s going to be both visual and verbal. When only one system is engaged, it’s natural for it to become overloaded while the other system is bored. So, describe things verbally, and also present them visually.
+        *   2. **Let the modalities complement each other**. Some people will take that first tip and use it as justification to present different content in the two modalities. That actually increases cognitive load because the user has to try to process two things at once…  Instead, focus on letting each modality support, illustrate, or explain the other instead of competing with the other.
+        *   3. **Give the user control of the pace**. That’s more pertinent in educational applications of cognitive load, but often times interfaces have built-in timers on things like menus fading away or selections needing to be made. That dictates the pace, increases stress, and raises cognitive load. Instead, let the user control the pace.
+        *   4. **Emphasize essential content and minimize clutter**. The principle of discoverability says we want the user to be able to find the functions available to them, but that could also raise cognitive load if we just present a list of 500 options to them. To alleviate that, we can design our interfaces in a way that emphasizes the most common actions while still giving access to the full range of possible options.
+        *   5. **Offload tasks**. Look closely at what a user has to do or remember at every stage of the interface’s operation, and ask if you can offload part of that task. For example, if a user needs to remember something they entered on a preview screen, show them what they entered. If there’s a task they need to do manually that can be triggered automatically, trigger it automatically.
+
+**[GOAL #4] Students will understand the role of the motor system (action) in designing interactions.**
+
+
+
+*   **Motor system**: how the person then interacts with the world in response to their perception and cognition of the system and their task within the system
+*   In designing interfaces, we’re also interested in what is physically possible for users to do: this includes things like how fast they can move and how precisely they can tap.
+*   **Consistency**: being consistent with other tools and applications
+*   **Mapping**: can affect the user’s precision and understanding of an icon/feature/symbol
+*   **Tolerance**: make our interface tolerant of errors
+
+  
+---
+
+
+**2.5 Design Principles and Heuristics**
+
+**[GOAL #1] Students will understand the 15 design principles described in the lesson.**
+
+
+
+*   Don Norman’s six principles of design from “Design of Everyday Things”
+*   Larry Constantine and Lucy Lockwood’s six principles of user interface design from “Software for Use: A Practical Guide to the Essential Models and Methods of Usage-Centered Design”
+*   Jakob Nielsen’s Ten Heuristics for user interface design that can be used for both design and evaluation from “Usability Engineering”
+*   Seven Principles of Universal Design from the Center for Universal Design at NC State
+*   All combine to make 15 principles of interaction design:
+    *   **#1: Discoverability**
+        *   Don Norman’s principle of discoverability is very similar to the Visibility Principle from Constantine and Lockwood, as well as Nielsen’s idea that Recognition is preferable to Recall.
+        *   Principle of Discoverability advocates that functions be visible to the user so they can discover them, rather than relying on them learning about them elsewhere.
+        *   Challenging for designing gesture-based interfaces
+    *   **#2: Simplicity**
+        *   Simplicity is a part of three of our sets of principles: Nielsen’s heuristics, Constantine and Lockwood’s principles, and the Universal Design principles.
+        *   Simplicity as a universal design principle is especially interested with whether people of different experiences, knowledges, or languages can figure out what to do.
+    *   **#3: Affordances**
+        *   One way to keep design simple and usable is to design interfaces that, by their very design, tell you how to use them.
+        *   Don Norman describes these as affordances: the design of things affords, or hints at, the way they’re used
+            *   This is extremely common in the physical world because the physical design of objects is connected to the physical function they serve.
+            *   Buttons are meant to be pressed, handles are meant to be pulled, knobs are meant to be turned.
+        *   Our affordances are defined by who the user is
+        *   **Signifier** (Norman): in-context instructions, such as arrows to indicate which way to swipe or a menu icon to indicate how to access the options
+        *   Create our own affordances by creating an intuitive mapping between controls and their effects in the world, being consistent with what others have done in the past
+        *   Affordances, to Norman, are actually inherent properties of a device.
+            *   For example, a door bar has the inherent property that the handle moves into the crossbar and opens the latch: that is the affordance.
+            *   A perceived affordance is a property attributed to the object by a human observer.
+            *   In the door example, pushability is the perceived affordance
+            *   A signifier is anything that helps the perceived affordance match the actual affordance.
+            *   For example: a “push” sign is a signifier
+            *   For this reason, we can’t add affordances. _Affordances are inherent in our systems_. Instead, we can add signifiers, and signifiers raise the likelihood that the user will accurately perceive the affordances that are already present.
+    *   **#4: Mapping**
+        *   Norman and Nielsen both talk about the need for a mapping between interfaces and their effects in the world.
+            *   Nielsen’s heuristic describes the general goal.
+            *   Norman’s principle describes one way to achieve it. Strong mappings help make information appear in a natural and logical order.
+        *   Affordances were about creating interfaces where their design suggested how they are used; mapping refers to creating interfaces where their design makes it clear what the effect will be of using them.
+    *   **#5: Perceptibility**
+        *   Refers to the user’s ability to actually perceive the state of the system
+            *   Nielsen is interested in perceptibility of the state of the system, like whether things are on or off.
+            *   Universal design is concerned with the perceptibility of information, like how easy signs can be read.
+        *   Nonetheless, though, in designing interfaces we often end up addressing both of these things together: we want to make the state of the system easily **#1: **perceptible.
+    *   **#6: Consistency**
+        *   Consistency is a principle in Norman’s principles, Nielsen’s heuristics, and Constantine and Lockwood’s principles.
+        *   Also similar to Dix et al’s idea of generalizability
+            *   The general idea across all of them is that we should be consistent both within and across interfaces to minimize the amount of learning the user needs to do to learn our interface.
+            *   In this way, we kind of create affordances of our own: unlike traditional physical affordances, there is no physical reason for the interface to be designed that way, but by convention we create expectations for users.
+        *   Most of the interfaces we design will have a number of functions in common with other interfaces, so by leveraging the way things have been done in the past, we can help users understand our interfaces more quickly.
+        *   So in trying to maintain the consistency principle, you’ll encounter some challenges. There may be multiple conflicting things with which you want to be consistent. There may be questions about whether the value of a change is worth the drop in consistency. These are things to test with users.
+    *   **#7: Flexibility**
+        *   From both Nielsen’s heuristics and the principles for universal design
+            *   Nielsen is more interested in catering to both novice and expert users.
+            *   Universal design definition is more interested in accommodating users of various abilities and preferences, but the underlying principle is the same.
+        *   Dix et al. also have a category of principles called Flexibility principles that advocate user customizability and supporting multiple designs for the same task.
+        *   Wherever possible, we should support the different interactions in which people engage naturally, rather than forcing them into one against their expertise or preference.
+    *   **#8: Equity**
+        *   The principle of flexibility in some ways clashes with the principle of equity, but both come from the principles of universal design. In reality, though, they’re actually complementary of one another.
+        *   Equity is largely about making the user experience the same for all users, and flexibility is a means to achieve that.
+            *   User experience in this instance means treating every user like they’re within the target audience and extending the same benefits to all users, including things related to privacy and security.
+            *   Novice vs expert, regular vs disabled, old vs young, etc
+    *   **#9, #10: Ease and comfort**
+        *   The principles of universal design have two additional principles that relate to equitable treatment, specifically in terms of physical and interaction.
+        *   For example, when deciding on the size of buttons on a mobile interface, we should take into consideration that some users may have tremors that make it more difficult to interact precisely.
+        *   As we get into areas like wearable computing and virtual reality, these issues of ease and comfort will become more and more pertinent.
+    *   **#11: Structure**
+        *   The structure principle is concerned with the overall architecture of a user interface.
+        *   Those are largely parts of structure: organizing things in an intuitive way that groups similar parts, separates dissimilar ones, and helps the user navigate what they’re consuming.
+        *   In many ways, it’s more closely related to user interface design than HCI more generally. What’s interesting to me about the structure principle is that it borrows from a form of user interface design that predates computers considerably.
+    *   **#12: Constraints**
+        *   Constraining the user to only performing the correct actions in the first place: refers to the need to stop faulty user input before it is received
+        *   Nielsen: In its simplest form, constraints can be described as: prevent the user from entering input that wouldn’t have worked anyway.
+        *   Norman: breaks constraints down into four sub-categories:
+            *   Physical constraints are those that literally, physically prevent you from performing the wrong action (e.g. wall plugs)
+            *   Cultural constraints are those rules that are generally followed by different societies, like facing forward on an escalator or forming a line while waiting
+            *   Semantic constraints are those that are inherent to the meaning of the situation. They’re similar to affordances in that regard. (e.g. rearview mirror)
+            *   Logical constraints are things that are self-evident based on the situation. (e.g. when building furniture, there’s only one screw and one hole left at the end)
+        *   Constraints are different in that they actively stand in the user’s way: they become more visible. That’s often a bad thing, but in the case of constraints, it serves the greater good.
+    *   **#13, #14, #15: Tolerance, feedback, and documentation**
+        *   Tolerance means that users shouldn’t be at risk of causing too much trouble accidentally.
+            *   Dix et al. also refers to this as recoverability.
+            *   Nielsen’s definition is most interested in supporting user experimentation; the system should tolerate users poking around with things.
+            *   Constantine and Lockwood’s definition and the principle for universal design are a little closer to traditional mistakes.
+            *   Jef Raskin poses this as a more humorous law of interface design: “A computer shall not harm your work or, through inactivity, allow your work to come to harm.”
+            *   So, we first have to make sure that the system prevents the user from doing too much damage accidentally.
+        *   Second, the system should give plenty of feedback so that the user can understand why the error happened and how to avoid it in the future.
+            *   Norman, Constantine, and Lockwood are all interested not just in feedback in error detection, but also in feedback in the interface more generally.
+            *   Dix et al. have it in their principles as well, as part of observability and responsiveness.
+            *   But since we talk about it on its own so much, here let’s emphasize Nielsen’s version, error recognition.
+        *   Finally, Nielsen has one last heuristic regarding user error: documentation.
+            *   One goal of usable design is to avoid the need for documentation altogether.
+            *   We want users to just interact naturally with our interfaces.
+            *   However, Nielsen advocates last that we supply comprehensive documentation anyway, just in case.
+            *   ![screenshot](/images_Exam1/image8.png)
+
+
+**[GOAL #2] Students will understand the four sets of design principles that gave rise to the 15 principles covered here.**
+
+
+
+*   Dix, Finlay, Abowd, and Beale propose three categories of principles:
+    *   Learnability for how easily a new user can grasp an interface;
+    *   Flexibility for how many ways an interface can be used;
+    *   Robustness for how well an interface gives feedback and recovers from errors. We talk about their learnability principles when we discuss mental models.
+*   Jill Gerhardt-Powals has a list of principles for cognitive engineering aimed especially at reducing cognitive load. Her list has some particularly useful applications data processing and visualization.
+*   In _The Human Interface_, Jef Raskin outlines some additional revolutionary design rules. I wouldn’t advocate following them necessarily, but they’re interesting to see a very different approach to design.
+*   In _Computer Graphics: Principles and Practice_, Jim Foley and others give some principles that apply specifically to 2D and 3D computer graphics.
+*   And finally, Susan Weinschenk and Dean Barker have a set of guidelines that provide an even more holistic view of interface design, including things like linguistic and cultural sensitivity, tempo and pace, and domain clarity.
+
 
 ---
 
@@ -686,165 +955,6 @@
     *   We can use the data gathered here to summarize a more comprehensive task analysis that will be useful in designing and prototyping our designs.
 
 
-
----
-
-
-**2.3 Direct Manipulation and Invisible Interfaces**
-
-**[GOAL #1] Students will understand the power of direct manipulation in designing interfaces.**
-
-
-
-*   **Direct manipulation**: the user should interact directly with their task
-    *   The principle that the user should feel as much as possible like they’re directly controlling the object of their task
-    *   New technologies are making it more and more possible to feel like we’re directly manipulating something even when there’s an interface in the way (e.g. touch screens where you can drag icons and pinch the screen to zoom)
-*   Our goal is to narrow the gulf of execution and gulf of evaluation as much as possible.
-    *   Arguably, the ultimate form of this is something called direct manipulation.
-    *   We can shorten the gulfs of execution and evaluation in a number of ways without direct manipulation, but direct manipulation is a powerful method for shortening that distance.
-    *   _Example_: moving files with the command line vs moving them with your mouse -- there’s a narrower gulf of execution because the interface is leveraging real-world expectation and experience
-    *   _Example_: moving files with a mouse is great, but there is a gulf of execution and evaluation for novice users => modern touch screens make direct manipulation more direct than ever
-*   This gives us a nice general heuristic to keep in mind: **how do we help the user interact most closely with the target of their task**? How do we make it so they’re manipulating it as directly as possible?
-*   The feeling of directness is inversely proportional to the amount of cognitive effort it takes to manipulate and evaluate a system
-*   ![screenshot](/images_Exam1/image4.png)
-
-    
-    *   In other words, the more cognitive load required to use the system, the less direct the interaction feels.
-    *   The authors break distance into two components: semantic distance and articulatory distance.
-        *   **Semantic distance** refers to the difference between the user’s goals and their expression in the system. In other words, it’s how hard it is to know what to do.
-        *   **Articulatory distance** is the distance between that expression and its execution. In other words, it’s how hard it is to actually do what you know to do.
-    *   The user starts with some goals, translates them into their form of expression in the interface, and executes that expression. The system then returns some output in some form of expression, which is translated by the user into their understanding of the new state of the system. => This cycle is happening constantly when you’re interacting with any interface. But distance is only one component. It’s possible to have interfaces with little distance that are nonetheless not examples of direct manipulation. => This is true for feedback cycles in general, not just direct manipulation.
-        *   What sets direct manipulation apart is the second component: direct engagement: the systems that best exemplify direct manipulation all give the qualitative feeling that one is directly engaged with control of the objects--not with the programs, not with the computer, but with the semantic objects of our goals and intentions.
-*   **Virtual reality (VR)**
-    *   Virtual reality right now is making some incredible strides in facilitating direct manipulation in places where it hasn’t been possible before.
-    *   Traditionally, when designers are designing stuff in 3D, they’re forced to use 2D interfaces. That translation from 2D to 3D really gets in the way of directly manipulating whatever is being designed.
-    *   Through virtual reality, though, designers are able to view what they’re designing in 3D, as if it’s in the room there with them.
-    *   Gesture interfaces like those used in virtual reality struggle with some feedback issues.
-    *   We aim to make the user feel like they’re physically manipulating the artifact, but when you’re working with something physically, it pushes back against your hands.
-    *   Direct manipulation is a big challenge for virtual reality as well. Virtual reality thrives on making you feel like you’re somewhere else visually and auditorily, but it has a long way to go kinesthetically.
-    *   How do you create the feeling of direct manipulation based on physical action when you can only give feedback visually and auditorily?
-
-**[GOAL #2] Students will understand the idea of an invisible interface between a user and a task.**
-
-
-
-*   **Invisible Interface**: an interface that disappears between the user and their task
-    *   At their best, the interface actually disappears, which is what we mean by an invisible interface.
-    *   With an invisible interface, the user spends no time having to think about the interface they’re using: all their time is dedicated to thinking about the task that they’re performing. Even though there is an interface in the middle, the user spends no time thinking about it. Instead, they feel as if they are interacting directly with the task.
-    *   Whether through using direct manipulation, through innovative approaches to shrinking these gulfs, or through the user’s patience and learning, our ultimate goal is for the interface between the user and the task to become invisible.
-*   **Tips for designing invisible interfaces**
-    *   1. **Use affordances**. We talk more about affordances when we discuss design principles. Affordances are places where the visual design of the interface suggests how it is to be used. Buttons are for pressing, dials are for turning, switches are for flicking. Use these expectations to make your interface more usable.
-    *   2. **Know your user**. Invisibility means different things to different people. Invisibility to a novice means that all the interactions are natural, but invisibility to an expert means maximizing efficiency. Know for whom you’re trying to design.
-    *   3. **Differentiate your user**. Maybe you’re designing for both novices and experts. If that’s the case, provide multiple ways of accomplishing tasks. For example, having copy and paste under the ‘Edit’ menu keeps those options discoverable, but providing Ctrl+C and Ctrl+V as shortcuts keeps those actions efficient.
-    *   4. **Let your interface teach**. When we think of teaching users how to use our software, we usually think of tutorials or manuals, but ideally the interface itself will do the teaching. For example, when users select copy and paste from the edit menu, they see the hotkey that corresponds to that function. The goal is to teach them the more efficient way of performing those actions without requiring them to already know it in order to work.
-    *   5. **Talk to your user**. We’ll say this over and over again, but the best thing you can do is talk to the user. Ask them what they’re thinking while they use an interface. Note especially whether they talk about the task or the interface: if they’re talking about the interface, then it’s pretty visible.
-
-**[GOAL #3] Students will understand that invisibility may come via learning or via design, but via design is the goal.**
-
-
-
-*   Interfaces become invisible not just through great design, but also through users learning to use them => with enough practice and experience, many users will become sufficiently comfortable with many interfaces to feel invisibly integrated into the task.
-    *   Just because the interface has become invisible doesn’t mean it’s a great interface.
-*   Our goal is to create interfaces that are invisible from the moment the user starts using them. They should feel immediately as if they’re interacting with the task underlying the interface.
-*   Direct manipulation isn’t just about designing interactions that feel like you’re directly manipulating the interface. It’s also about designing interfaces that lend themselves to interactions that feel direct.
-
-
-
----
-
-
-**2.4 Human Abilities**
-
-**[GOAL #1] Students will understand the three main human abilities: perception, cognition, and action.**
-
-
-
-*   Information processing model: involves three major systems: perception, cognition, and response.
-*   Input = perception
-    *   **Input**: how stimuli are sensed from the world and perceived in the mind.
-*   Processing = cognition
-    *   **Processing**: cognition, how the brain stores and reasons over the input it’s received.
-*   Output = action
-    *   **Output**: how the brain then controls the individual’s actions in the world.
-
-**[GOAL #2] Students will understand the strengths and weaknesses of the different types of perception in designing interfaces.**
-
-
-
-*   **Sight**
-    *   **Peripheral vision**
-        *   We can assume that the most important details should be placed in the center of the user’s view; peripheral vision is good for detecting motion, but it isn’t as good for detecting color or detail.
-        *   We might use periphery for some alerts, we shouldn’t require the user to focus closely on anything out there.
-    *   **Color-blindedness**
-        *   We want to avoid relying on color to understand an interface. We can use it to emphasize knowledge that is already present in the system, but using the system shouldn’t rely on perceiving color
-    *   Sight is directional.
-        *   If the user is looking the wrong way or has his/her eyes closed, he’ll/she’ll miss visual feedback.
-        *   Visual acuity decreases with age: if we’re designing something with older audiences in mind, we want to be careful of things like font size. Ideally, these would be adjustable to meet the needs of multiple audiences.
-    *   The majority of concepts we discuss in HCI are likely connected to visual perception.
-*   **Hearing**
-    *   Unlike vision, hearing isn’t directional.
-    *   Audio might be useful for designing alerts, but can be overwhelming for users or share too much with people around her.
-*   **Sensation / haptic**
-    *   Unlike listening, touch feedback is generally only available to the person it’s touching, so it can be used to create more personal feedback.
-    *   Traditionally, touch feedback or haptic feedback has been very natural. But with touchscreens, motion controls, and virtual reality, touch needs to more and more be designed explicitly into the system if we’re to use it.
-
-**[GOAL #3] Students will understand the limitations of human cognition and memory and its relevance to designing interfaces that strain working memory.**
-
-
-
-*   For our purposes, we have three different kinds of memory: the perceptual store, the short-term memory, and the long-term memory
-*   **Perceptual store**: very short-term memory, lasting less than a second.
-    *   One of the most common models of this working memory came from Alan Baddeley and Graham Hitch in 1974.
-    *   They described it as having three parts:
-        *   **Visuospatial sketchpad**: holds visual information for active manipulation (example: picture a pencil. The visuospatial sketchpad is where you’re seeing that pencil.)
-        *   **Articulatory loop or phonological store**: similar to the visuospatial sketchpad, but for verbal or auditory information. It stores the sounds or speech you’ve heard recently.
-        *   **Episodic buffer**: added to the model in 2000, refers to taking care of integrating information from the other systems, as well as chronological ordering to put things in place.
-        *   **Central executive**: the final component, responsible for coordinating these various systems.
-    *   When the user has domain expertise, he/she is able to better process images about that domain more quickly: **expertise or rehearsal delays the decay of the perceptual buffer**
-*   **Short-term memory**: 
-    *   It’s important we avoid requiring the user to keep too much stored in short-term memory.
-    *   The current state of the art says that people can only hold 4 to 5 chunks in short-term memory at one time.
-    *   It’s far easier to recognize something you know than to recall it independently; that will be a useful takeaway for us as we design interfaces: **we can minimize the memory load on the user by relying more on their ability to recognize things than recall them**.
-    *   Implications of short-term memory for HCI:
-        *   We do not want to ask the user to hold too much in working memory at a time: 4 to 5 chunks is all.
-        *   We can increase the user’s effective short-term memory capacity by helping them chunk things
-        *   When possible, we should leverage recognition over recall: the user doesn’t have to remember specifics, they just need to recognize it when they see it.
-*   **Long-term memory**: a seemingly unlimited store of memories
-    *   It’s harder to put something into long-term memory than to put it into short-term memory. In fact, to load something into long-term memory, you generally need to put it into short-term memory several times.
-    *   **Leitner System**: way of memorizing key-value pairs, or in other words, a way of memorizing flashcards
-*   **Learning**
-    *   When we design interfaces, we are in some ways hoping the user has to learn as little as possible to find the interface useful.
-    *   However, our interfaces should also teach the user over time how to use them most efficiently.
-    *   **Procedural learning**: how to _do_ something
-    *   **Declarative learning**: knowledge _about_ something
-    *   **While declarative knowledge is how we generally communicate with one another, procedural knowledge is generally what we do in HCI**
-        *   When you have strong procedural knowledge, you may forget how you’re doing what you’re doing because it’s so second-nature.
-        *   You’re unconsciously competent with what you’re doing.
-        *   When you’re in that state, it can be difficult to explain to someone who lacks that competence because you aren’t sure what makes you good at it.
-        *   It’s difficult to translate your subconscious procedural knowledge into explicit declarative knowledge, but declarative knowledge is how we communicate, especially communicating with novice users.
-*   **Cognitive load**
-    *   Cognitive load has two major applications to our work in designing interfaces:
-        *   One, we want to reduce the cognitive load posed by the interface so the user can dedicate more of their resources to the task itself.
-        *   Second, we want to understand for our context what other tasks are competing for cognitive resources.
-    *   **Tips for reducing cognitive load**
-        *   1. **Use multiple modalities**. Most often, that’s going to be both visual and verbal. When only one system is engaged, it’s natural for it to become overloaded while the other system is bored. So, describe things verbally, and also present them visually.
-        *   2. **Let the modalities complement each other**. Some people will take that first tip and use it as justification to present different content in the two modalities. That actually increases cognitive load because the user has to try to process two things at once…  Instead, focus on letting each modality support, illustrate, or explain the other instead of competing with the other.
-        *   3. **Give the user control of the pace**. That’s more pertinent in educational applications of cognitive load, but often times interfaces have built-in timers on things like menus fading away or selections needing to be made. That dictates the pace, increases stress, and raises cognitive load. Instead, let the user control the pace.
-        *   4. **Emphasize essential content and minimize clutter**. The principle of discoverability says we want the user to be able to find the functions available to them, but that could also raise cognitive load if we just present a list of 500 options to them. To alleviate that, we can design our interfaces in a way that emphasizes the most common actions while still giving access to the full range of possible options.
-        *   5. **Offload tasks**. Look closely at what a user has to do or remember at every stage of the interface’s operation, and ask if you can offload part of that task. For example, if a user needs to remember something they entered on a preview screen, show them what they entered. If there’s a task they need to do manually that can be triggered automatically, trigger it automatically.
-
-**[GOAL #4] Students will understand the role of the motor system (action) in designing interactions.**
-
-
-
-*   **Motor system**: how the person then interacts with the world in response to their perception and cognition of the system and their task within the system
-*   In designing interfaces, we’re also interested in what is physically possible for users to do: this includes things like how fast they can move and how precisely they can tap.
-*   **Consistency**: being consistent with other tools and applications
-*   **Mapping**: can affect the user’s precision and understanding of an icon/feature/symbol
-*   **Tolerance**: make our interface tolerant of errors
-
-
-
 ---
 
 
@@ -969,119 +1079,6 @@
         *   Personas are personal and meant to give us an empathetic view of the user experience.
         *   User models are more objective and meant to give us a measurable and comparable view of the user experience.
         *   ![screenshot](/images_Exam1/image2.png)
-
----
-
-
-**2.5 Design Principles and Heuristics**
-
-**[GOAL #1] Students will understand the 15 design principles described in the lesson.**
-
-
-
-*   Don Norman’s six principles of design from “Design of Everyday Things”
-*   Larry Constantine and Lucy Lockwood’s six principles of user interface design from “Software for Use: A Practical Guide to the Essential Models and Methods of Usage-Centered Design”
-*   Jakob Nielsen’s Ten Heuristics for user interface design that can be used for both design and evaluation from “Usability Engineering”
-*   Seven Principles of Universal Design from the Center for Universal Design at NC State
-*   All combine to make 15 principles of interaction design:
-    *   **#1: Discoverability**
-        *   Don Norman’s principle of discoverability is very similar to the Visibility Principle from Constantine and Lockwood, as well as Nielsen’s idea that Recognition is preferable to Recall.
-        *   Principle of Discoverability advocates that functions be visible to the user so they can discover them, rather than relying on them learning about them elsewhere.
-        *   Challenging for designing gesture-based interfaces
-    *   **#2: Simplicity**
-        *   Simplicity is a part of three of our sets of principles: Nielsen’s heuristics, Constantine and Lockwood’s principles, and the Universal Design principles.
-        *   Simplicity as a universal design principle is especially interested with whether people of different experiences, knowledges, or languages can figure out what to do.
-    *   **#3: Affordances**
-        *   One way to keep design simple and usable is to design interfaces that, by their very design, tell you how to use them.
-        *   Don Norman describes these as affordances: the design of things affords, or hints at, the way they’re used
-            *   This is extremely common in the physical world because the physical design of objects is connected to the physical function they serve.
-            *   Buttons are meant to be pressed, handles are meant to be pulled, knobs are meant to be turned.
-        *   Our affordances are defined by who the user is
-        *   **Signifier** (Norman): in-context instructions, such as arrows to indicate which way to swipe or a menu icon to indicate how to access the options
-        *   Create our own affordances by creating an intuitive mapping between controls and their effects in the world, being consistent with what others have done in the past
-        *   Affordances, to Norman, are actually inherent properties of a device.
-            *   For example, a door bar has the inherent property that the handle moves into the crossbar and opens the latch: that is the affordance.
-            *   A perceived affordance is a property attributed to the object by a human observer.
-            *   In the door example, pushability is the perceived affordance
-            *   A signifier is anything that helps the perceived affordance match the actual affordance.
-            *   For example: a “push” sign is a signifier
-            *   For this reason, we can’t add affordances. _Affordances are inherent in our systems_. Instead, we can add signifiers, and signifiers raise the likelihood that the user will accurately perceive the affordances that are already present.
-    *   **#4: Mapping**
-        *   Norman and Nielsen both talk about the need for a mapping between interfaces and their effects in the world.
-            *   Nielsen’s heuristic describes the general goal.
-            *   Norman’s principle describes one way to achieve it. Strong mappings help make information appear in a natural and logical order.
-        *   Affordances were about creating interfaces where their design suggested how they are used; mapping refers to creating interfaces where their design makes it clear what the effect will be of using them.
-    *   **#5: Perceptibility**
-        *   Refers to the user’s ability to actually perceive the state of the system
-            *   Nielsen is interested in perceptibility of the state of the system, like whether things are on or off.
-            *   Universal design is concerned with the perceptibility of information, like how easy signs can be read.
-        *   Nonetheless, though, in designing interfaces we often end up addressing both of these things together: we want to make the state of the system easily **#1: **perceptible.
-    *   **#6: Consistency**
-        *   Consistency is a principle in Norman’s principles, Nielsen’s heuristics, and Constantine and Lockwood’s principles.
-        *   Also similar to Dix et al’s idea of generalizability
-            *   The general idea across all of them is that we should be consistent both within and across interfaces to minimize the amount of learning the user needs to do to learn our interface.
-            *   In this way, we kind of create affordances of our own: unlike traditional physical affordances, there is no physical reason for the interface to be designed that way, but by convention we create expectations for users.
-        *   Most of the interfaces we design will have a number of functions in common with other interfaces, so by leveraging the way things have been done in the past, we can help users understand our interfaces more quickly.
-        *   So in trying to maintain the consistency principle, you’ll encounter some challenges. There may be multiple conflicting things with which you want to be consistent. There may be questions about whether the value of a change is worth the drop in consistency. These are things to test with users.
-    *   **#7: Flexibility**
-        *   From both Nielsen’s heuristics and the principles for universal design
-            *   Nielsen is more interested in catering to both novice and expert users.
-            *   Universal design definition is more interested in accommodating users of various abilities and preferences, but the underlying principle is the same.
-        *   Dix et al. also have a category of principles called Flexibility principles that advocate user customizability and supporting multiple designs for the same task.
-        *   Wherever possible, we should support the different interactions in which people engage naturally, rather than forcing them into one against their expertise or preference.
-    *   **#8: Equity**
-        *   The principle of flexibility in some ways clashes with the principle of equity, but both come from the principles of universal design. In reality, though, they’re actually complementary of one another.
-        *   Equity is largely about making the user experience the same for all users, and flexibility is a means to achieve that.
-            *   User experience in this instance means treating every user like they’re within the target audience and extending the same benefits to all users, including things related to privacy and security.
-            *   Novice vs expert, regular vs disabled, old vs young, etc
-    *   **#9, #10: Ease and comfort**
-        *   The principles of universal design have two additional principles that relate to equitable treatment, specifically in terms of physical and interaction.
-        *   For example, when deciding on the size of buttons on a mobile interface, we should take into consideration that some users may have tremors that make it more difficult to interact precisely.
-        *   As we get into areas like wearable computing and virtual reality, these issues of ease and comfort will become more and more pertinent.
-    *   **#11: Structure**
-        *   The structure principle is concerned with the overall architecture of a user interface.
-        *   Those are largely parts of structure: organizing things in an intuitive way that groups similar parts, separates dissimilar ones, and helps the user navigate what they’re consuming.
-        *   In many ways, it’s more closely related to user interface design than HCI more generally. What’s interesting to me about the structure principle is that it borrows from a form of user interface design that predates computers considerably.
-    *   **#12: Constraints**
-        *   Constraining the user to only performing the correct actions in the first place: refers to the need to stop faulty user input before it is received
-        *   Nielsen: In its simplest form, constraints can be described as: prevent the user from entering input that wouldn’t have worked anyway.
-        *   Norman: breaks constraints down into four sub-categories:
-            *   Physical constraints are those that literally, physically prevent you from performing the wrong action (e.g. wall plugs)
-            *   Cultural constraints are those rules that are generally followed by different societies, like facing forward on an escalator or forming a line while waiting
-            *   Semantic constraints are those that are inherent to the meaning of the situation. They’re similar to affordances in that regard. (e.g. rearview mirror)
-            *   Logical constraints are things that are self-evident based on the situation. (e.g. when building furniture, there’s only one screw and one hole left at the end)
-        *   Constraints are different in that they actively stand in the user’s way: they become more visible. That’s often a bad thing, but in the case of constraints, it serves the greater good.
-    *   **#13, #14, #15: Tolerance, feedback, and documentation**
-        *   Tolerance means that users shouldn’t be at risk of causing too much trouble accidentally.
-            *   Dix et al. also refers to this as recoverability.
-            *   Nielsen’s definition is most interested in supporting user experimentation; the system should tolerate users poking around with things.
-            *   Constantine and Lockwood’s definition and the principle for universal design are a little closer to traditional mistakes.
-            *   Jef Raskin poses this as a more humorous law of interface design: “A computer shall not harm your work or, through inactivity, allow your work to come to harm.”
-            *   So, we first have to make sure that the system prevents the user from doing too much damage accidentally.
-        *   Second, the system should give plenty of feedback so that the user can understand why the error happened and how to avoid it in the future.
-            *   Norman, Constantine, and Lockwood are all interested not just in feedback in error detection, but also in feedback in the interface more generally.
-            *   Dix et al. have it in their principles as well, as part of observability and responsiveness.
-            *   But since we talk about it on its own so much, here let’s emphasize Nielsen’s version, error recognition.
-        *   Finally, Nielsen has one last heuristic regarding user error: documentation.
-            *   One goal of usable design is to avoid the need for documentation altogether.
-            *   We want users to just interact naturally with our interfaces.
-            *   However, Nielsen advocates last that we supply comprehensive documentation anyway, just in case.
-            *   ![screenshot](/images_Exam1/image8.png)
-
-
-**[GOAL #2] Students will understand the four sets of design principles that gave rise to the 15 principles covered here.**
-
-
-
-*   Dix, Finlay, Abowd, and Beale propose three categories of principles:
-    *   Learnability for how easily a new user can grasp an interface;
-    *   Flexibility for how many ways an interface can be used;
-    *   Robustness for how well an interface gives feedback and recovers from errors. We talk about their learnability principles when we discuss mental models.
-*   Jill Gerhardt-Powals has a list of principles for cognitive engineering aimed especially at reducing cognitive load. Her list has some particularly useful applications data processing and visualization.
-*   In _The Human Interface_, Jef Raskin outlines some additional revolutionary design rules. I wouldn’t advocate following them necessarily, but they’re interesting to see a very different approach to design.
-*   In _Computer Graphics: Principles and Practice_, Jim Foley and others give some principles that apply specifically to 2D and 3D computer graphics.
-*   And finally, Susan Weinschenk and Dean Barker have a set of guidelines that provide an even more holistic view of interface design, including things like linguistic and cultural sensitivity, tempo and pace, and domain clarity.
-
 
 
 ---
